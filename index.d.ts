@@ -4,7 +4,7 @@ import { SpringConfig } from "@react-spring/web";
 type configsFn = (numberValue: number, index: number) => SpringConfig;
 
 export interface Props {
-  animateToNumber: number;
+  animateToNumber: number | string;
   fontStyle?: React.CSSProperties;
   includeComma?: boolean;
   configs?: SpringConfig[] | configsFn;
